@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Examples - AI Communication Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="prompting.html"><i class="fas fa-pen-fancy"></i> Writing Prompts</a></li>
+                <li><a href="examples.html"><i class="fas fa-lightbulb"></i> Examples</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero fade-in">
+            <h1>Real Examples of AI Interactions</h1>
+            <p class="subtitle">Learn from practical examples of good and bad AI communication</p>
+            <img src="images/examples.jpg" alt="AI Examples" style="max-width: 800px; width: 100%; border-radius: 12px; margin-top: 2rem;">
+        </div>
+
+        <!-- Content Creation Examples -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-edit"></i> Content Creation Examples</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "Write a blog post about technology"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> Too vague, no specific topic, audience, or format specified.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <p>✅ "Write a 1000-word blog post about the impact of artificial intelligence on remote work. Target audience: HR professionals and business managers. Include:
+                - Current trends in AI-powered remote work tools
+                - 3 specific case studies of successful implementations
+                - Practical tips for implementing AI tools in remote teams
+                - Potential challenges and solutions
+                Tone: Professional but accessible. Format: Include headings, bullet points, and a conclusion with actionable takeaways."</p>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Specifies length, topic, audience, structure, and desired outcomes.</p>
+            </div>
+        </div>
+
+        <!-- Technical Problem Solving -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-code"></i> Technical Problem Solving</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "Fix my React code"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> No code provided, no error message, no context about functionality.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+"I'm building a React component that fetches and displays user data. Here's my current code:
+
+```jsx
+const UserProfile = () => {
+    const [userData, setUserData] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetch('/api/user')
+            .then(res => res.json())
+            .then(data => setUserData(data))
+            .finally(() => setLoading(false));
+    }, []);
+
+    return (
+        <div>{userData?.name || 'Loading...'}</div>
+    );
+}
+```
+
+Issues I'm experiencing:
+1. Component doesn't handle API errors
+2. No loading state displayed
+3. Need to add retry functionality
+
+Environment:
+- React 18.2.0
+- Node.js 16.x
+- Running in development mode
+
+Can you help me improve this code with proper error handling, loading states, and retry logic?"</pre>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Includes complete code, specific issues, environment details, and clear requirements.</p>
+            </div>
+        </div>
+
+        <!-- Data Analysis Examples -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-chart-bar"></i> Data Analysis Examples</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "What does this data mean?"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> No context, no specific analysis goals, no data format specified.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+"I have a CSV dataset of customer transactions with the following columns:
+- transaction_date
+- customer_id
+- product_id
+- purchase_amount
+- channel (online/in-store)
+
+Please help me analyze this data to:
+1. Identify customer segments based on:
+   - Purchase frequency
+   - Average transaction value
+   - Preferred shopping channel
+
+2. Detect patterns in:
+   - Seasonal buying behavior
+   - Product category preferences
+   - Customer lifetime value
+
+3. Generate visualizations for:
+   - Monthly revenue trends
+   - Customer segment distribution
+   - Channel performance comparison
+
+Format the results as:
+- Summary statistics for each analysis
+- Key insights and recommendations
+- Suggested next steps for marketing team
+
+Here's a sample of the data:
+[data sample]"</pre>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Specifies data structure, analysis goals, desired visualizations, and output format.</p>
+            </div>
+        </div>
+
+        <!-- Advanced Use Cases -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-brain"></i> Advanced Use Cases</h2>
+            
+            <!-- System Design -->
+            <div class="tip">
+                <strong><i class="fas fa-sitemap"></i> System Design Review</strong>
+                <div class="example good-example">
+                    <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+"Review this microservices architecture design:
+
+Components:
+1. User Authentication Service
+2. Product Catalog Service
+3. Order Processing Service
+4. Payment Gateway
+5. Notification Service
+
+Requirements:
+- Handle 100K concurrent users
+- 99.99% uptime
+- Max latency: 200ms
+- Data consistency across services
+
+Please analyze:
+1. Scalability considerations
+2. Potential bottlenecks
+3. Data consistency strategies
+4. Failure scenarios and recovery
+5. Monitoring approach
+
+Include specific recommendations for:
+- Service communication patterns
+- Caching strategies
+- Database choices
+- Load balancing approach"</pre>
+                </div>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="tip">
+                <strong><i class="fas fa-robot"></i> Machine Learning Pipeline</strong>
+                <div class="example good-example">
+                    <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+"Help me design a machine learning pipeline for sentiment analysis:
+
+Dataset:
+- 1M customer reviews
+- Multi-language content
+- Includes ratings (1-5 stars)
+
+Requirements:
+1. Data Preprocessing
+   - Language detection
+   - Text cleaning
+   - Feature extraction
+
+2. Model Selection
+   - Compare BERT vs. RoBERTa
+   - Consider computational constraints
+   - Evaluate multilingual capabilities
+
+3. Training Strategy
+   - Cross-validation approach
+   - Hyperparameter optimization
+   - Performance metrics
+
+4. Deployment Considerations
+   - Batch vs. real-time inference
+   - Model versioning
+   - Monitoring and retraining
+
+Please provide detailed recommendations for each component."</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting Examples -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-tools"></i> Troubleshooting Examples</h2>
+            
+            <div class="tip">
+                <strong><i class="fas fa-bug"></i> Performance Optimization</strong>
+                <div class="example good-example">
+                    <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+"Our Django application is experiencing slow response times:
+
+Current Setup:
+- Django 4.2
+- PostgreSQL database
+- Redis cache
+- Nginx reverse proxy
+- 8 CPU cores, 32GB RAM
+
+Symptoms:
+1. API endpoints taking >2s to respond
+2. Database CPU usage at 90%
+3. Increasing 504 Gateway Timeouts
+
+Relevant Metrics:
+- 1000 requests/minute
+- 70% read operations
+- 30% write operations
+- Average query time: 1.5s
+
+Please provide:
+1. Potential bottleneck analysis
+2. Specific optimization strategies
+3. Monitoring recommendations
+4. Implementation priorities"</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add fade-in effect to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

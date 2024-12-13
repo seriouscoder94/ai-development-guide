@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Examples - AI Communication Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-content">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="prompting.html"><i class="fas fa-pen-fancy"></i> Prompting Guide</a>
+                <a href="examples.html" class="active"><i class="fas fa-lightbulb"></i> Examples</a>
+                <a href="website-guide.html"><i class="fas fa-globe"></i> Website Guide</a>
+                <a href="app-guide.html"><i class="fas fa-mobile-alt"></i> App Guide</a>
+                <a href="game-guide.html"><i class="fas fa-gamepad"></i> Game Guide</a>
+            </div>
+        </nav>
+
+        <div class="hero fade-in">
+            <h1>Real Examples of AI Interactions</h1>
+            <p class="subtitle">Learn from practical examples of good and bad AI communication</p>
+            <img src="images/examples.jpg" alt="AI Examples" style="max-width: 800px; width: 100%; border-radius: 12px; margin-top: 2rem;">
+        </div>
+
+        <div class="card slide-up">
+            <h2><i class="fas fa-edit"></i> Writing Assistance</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "Make my writing better"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> No context, no specific requirements, and no sample text provided.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <p>✅ "Please help me make this product description more engaging for our e-commerce website. The target audience is tech-savvy professionals aged 25-40. Here's the current text: [your text]. Please focus on highlighting the benefits rather than just features."</p>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Provides context, target audience, current text, and specific improvement goals.</p>
+            </div>
+        </div>
+
+        <div class="card slide-up">
+            <h2><i class="fas fa-code"></i> Technical Problem Solving</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "Why isn't my code working?"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> No code provided, no error message, no context about what the code should do.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <p>✅ "I'm trying to create a function that calculates the average of numbers in an array. Here's my current code: [code]. When I input an empty array, it returns NaN instead of 0. How can I fix this?"</p>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Includes the code, the specific issue, what's been tried, and what the expected behavior is.</p>
+            </div>
+        </div>
+
+        <div class="card slide-up">
+            <h2><i class="fas fa-chart-bar"></i> Data Analysis</h2>
+            
+            <div class="example bad-example">
+                <h3><i class="fas fa-times-circle"></i> Poor Prompt:</h3>
+                <p>❌ "Analyze this data"</p>
+                <p><strong><i class="fas fa-exclamation-circle"></i> Why it's poor:</strong> No specific analysis goals, no context about what insights are needed.</p>
+            </div>
+
+            <div class="example good-example">
+                <h3><i class="fas fa-check-circle"></i> Effective Prompt:</h3>
+                <p>✅ "I have sales data from our online store for the past 6 months. Can you help me identify: 1) The top-selling products by revenue, 2) Any seasonal trends in sales, and 3) Which marketing campaigns had the highest conversion rates? Here's the data: [data]"</p>
+                <p><strong><i class="fas fa-star"></i> Why it works:</strong> Clear objectives, specific metrics to analyze, and context about the data.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add fade-in effect to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

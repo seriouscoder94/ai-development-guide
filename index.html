@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Communication Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-content">
+                <a href="index.html" class="active">Home</a>
+                <a href="prompting.html">Prompting Guide</a>
+                <a href="examples.html">Examples</a>
+                <a href="website-guide.html">Website Guide</a>
+                <a href="app-guide.html">App Guide</a>
+                <a href="game-guide.html">Game Guide</a>
+            </div>
+        </nav>
+
+        <div class="hero fade-in">
+            <h1>Master AI Communication</h1>
+            <p class="subtitle">Unlock the full potential of AI with effective communication</p>
+            <img src="images/ai-banner.jpg" alt="AI Communication Banner" style="max-width: 800px; width: 100%; border-radius: 12px; margin-top: 2rem;">
+        </div>
+
+        <div class="card-container">
+            <div class="card slide-up" style="animation-delay: 0.1s">
+                <img src="images/prompt-writing.jpg" alt="Writing Effective Prompts">
+                <h2><i class="fas fa-pen-fancy"></i> Writing Effective Prompts</h2>
+                <p>Master the art of crafting clear, specific, and effective prompts that get you the results you want.</p>
+                <div class="tip">
+                    <strong><i class="fas fa-star"></i> Key Tip:</strong> 
+                    <p>Be specific about what you want and provide context for better results.</p>
+                </div>
+                <a href="prompting.html" class="button">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="card slide-up" style="animation-delay: 0.2s">
+                <img src="images/examples.jpg" alt="Real-World Examples">
+                <h2><i class="fas fa-lightbulb"></i> Real-World Examples</h2>
+                <p>See practical examples of good and bad AI interactions, with explanations of why they work or don't.</p>
+                <div class="tip">
+                    <strong><i class="fas fa-star"></i> Key Tip:</strong>
+                    <p>Learning from examples is one of the fastest ways to improve your AI communication.</p>
+                </div>
+                <a href="examples.html" class="button">View Examples <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="card slide-up" style="animation-delay: 0.3s">
+                <img src="images/mistakes.jpg" alt="Common Mistakes">
+                <h2><i class="fas fa-exclamation-triangle"></i> Common Mistakes</h2>
+                <p>Learn about common pitfalls in AI communication and how to avoid them for better results.</p>
+                <div class="tip">
+                    <strong><i class="fas fa-star"></i> Key Tip:</strong>
+                    <p>Understanding what not to do is just as important as knowing what to do.</p>
+                </div>
+                <a href="prompting.html#mistakes" class="button">Avoid Mistakes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add fade-in effect to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

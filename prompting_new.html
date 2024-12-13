@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Effective Prompts - AI Communication Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="prompting.html"><i class="fas fa-pen-fancy"></i> Writing Prompts</a></li>
+                <li><a href="examples.html"><i class="fas fa-lightbulb"></i> Examples</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero fade-in">
+            <h1>The Art of AI Prompting</h1>
+            <p class="subtitle">Master the craft of clear, effective AI communication</p>
+            <img src="images/prompt-writing.jpg" alt="AI Prompt Writing" style="max-width: 800px; width: 100%; border-radius: 12px; margin-top: 2rem;">
+        </div>
+
+        <!-- Quick Start Guide -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-rocket"></i> Quick Start Guide</h2>
+            <div class="tip">
+                <strong><i class="fas fa-check"></i> The CLEAR Framework</strong>
+                <ul style="list-style: none; padding: 0;">
+                    <li><i class="fas fa-bullseye"></i> <strong>Context:</strong> Set the background and purpose</li>
+                    <li><i class="fas fa-list"></i> <strong>Language:</strong> Use clear, precise wording</li>
+                    <li><i class="fas fa-edit"></i> <strong>Examples:</strong> Provide relevant samples</li>
+                    <li><i class="fas fa-arrows-alt"></i> <strong>Action:</strong> Specify desired outcomes</li>
+                    <li><i class="fas fa-redo"></i> <strong>Refine:</strong> Iterate based on responses</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Core Principles -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-star"></i> Core Principles of Effective Prompting</h2>
+            
+            <div class="tip">
+                <strong><i class="fas fa-brain"></i> Be Specific and Detailed</strong>
+                <p>Instead of:</p>
+                <p class="example bad-example">"Write a blog post about AI"</p>
+                <p>Try:</p>
+                <p class="example good-example">"Write a 500-word blog post about the impact of AI on healthcare, focusing on recent developments in medical diagnosis. Include 2-3 real-world examples and target a general audience with basic technical knowledge."</p>
+            </div>
+
+            <div class="tip">
+                <strong><i class="fas fa-puzzle-piece"></i> Structure Your Request</strong>
+                <p>Break down complex requests into clear sections:</p>
+                <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+1. Task: [What you want to achieve]
+2. Context: [Background information]
+3. Format: [How you want the response]
+4. Constraints: [Any limitations or requirements]
+5. Examples: [Sample content or references]</pre>
+            </div>
+        </div>
+
+        <!-- Advanced Prompt Engineering -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-brain"></i> Advanced Prompt Engineering</h2>
+            
+            <div class="tip">
+                <strong><i class="fas fa-chess"></i> Role-Based Prompting</strong>
+                <p>Assign specific roles to enhance AI responses:</p>
+                <div class="example good-example">
+                    "Act as a senior software architect reviewing this system design. Consider:
+                    - Scalability concerns
+                    - Security implications
+                    - Performance bottlenecks
+                    - Maintenance challenges"
+                </div>
+            </div>
+
+            <div class="tip">
+                <strong><i class="fas fa-sitemap"></i> System Design Prompting</strong>
+                <p>Break down complex systems methodically:</p>
+                <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+1. Requirements Analysis
+   - Functional requirements
+   - Non-functional requirements
+2. Component Breakdown
+   - Core modules
+   - Dependencies
+3. Implementation Strategy
+   - Technology stack
+   - Integration points
+4. Validation Criteria
+   - Success metrics
+   - Testing approach</pre>
+            </div>
+        </div>
+
+        <!-- Expert Techniques -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-crown"></i> Expert-Level Techniques</h2>
+            
+            <div class="tip">
+                <strong><i class="fas fa-code-branch"></i> Multi-Step Reasoning</strong>
+                <p>Guide AI through complex problem-solving:</p>
+                <div class="example good-example">
+                    "Let's approach this machine learning problem systematically:
+                    1. Data Analysis: Examine distribution and features
+                    2. Model Selection: Compare suitable algorithms
+                    3. Feature Engineering: Design relevant transformations
+                    4. Validation Strategy: Define cross-validation approach
+                    5. Performance Metrics: Select appropriate metrics"
+                </div>
+            </div>
+
+            <div class="tip">
+                <strong><i class="fas fa-project-diagram"></i> Context Threading</strong>
+                <p>Maintain context across multiple exchanges:</p>
+                <ol style="padding-left: 1.5rem;">
+                    <li>Initial Context Setting: "We're developing a microservices architecture..."</li>
+                    <li>Progressive Detail: "Building on our previous discussion about service discovery..."</li>
+                    <li>Reference Points: "Regarding the authentication service we discussed..."</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Domain-Specific Strategies -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-laptop-code"></i> Domain-Specific Strategies</h2>
+            
+            <div class="scenario-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                <div class="tip">
+                    <strong><i class="fas fa-database"></i> Data Analysis</strong>
+                    <div class="example good-example">
+                        "Analyze this dataset with these specifications:
+                        - Primary metrics: [list metrics]
+                        - Required visualizations: [chart types]
+                        - Statistical tests: [specific tests]
+                        - Confidence intervals: [threshold]
+                        - Output format: [format details]"
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <strong><i class="fas fa-shield-alt"></i> Security Assessment</strong>
+                    <div class="example good-example">
+                        "Review this system architecture for:
+                        - Authentication vulnerabilities
+                        - Data encryption gaps
+                        - API security risks
+                        - Compliance requirements
+                        Provide specific mitigation strategies."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optimization Techniques -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-tachometer-alt"></i> Prompt Optimization</h2>
+            
+            <div class="tip-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <div class="tip">
+                    <strong><i class="fas fa-filter"></i> Output Formatting</strong>
+                    <p>Control response structure:</p>
+                    <pre style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+Format response as:
+{
+  "analysis": string,
+  "recommendations": string[],
+  "priority": number,
+  "implementation": {
+    "steps": string[],
+    "timeline": string
+  }
+}</pre>
+                </div>
+
+                <div class="tip">
+                    <strong><i class="fas fa-balance-scale"></i> Constraint Management</strong>
+                    <p>Set clear boundaries:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ Response length limits</li>
+                        <li>✓ Technical complexity level</li>
+                        <li>✓ Resource constraints</li>
+                        <li>✓ Time considerations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting Guide -->
+        <div class="card slide-up">
+            <h2><i class="fas fa-tools"></i> Advanced Troubleshooting</h2>
+            
+            <div class="tip">
+                <strong><i class="fas fa-bug"></i> When Responses Are Off-Track</strong>
+                <p>Systematic approach to improve responses:</p>
+                <ol style="padding-left: 1.5rem;">
+                    <li>Identify the specific deviation from expected output</li>
+                    <li>Isolate the problematic part of the prompt</li>
+                    <li>Add explicit constraints or requirements</li>
+                    <li>Request step-by-step explanation</li>
+                    <li>Validate with test cases</li>
+                </ol>
+            </div>
+
+            <div class="tip">
+                <strong><i class="fas fa-chart-line"></i> Performance Optimization</strong>
+                <p>Strategies for better results:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li><i class="fas fa-check"></i> Break complex tasks into subtasks</li>
+                    <li><i class="fas fa-check"></i> Use progressive refinement</li>
+                    <li><i class="fas fa-check"></i> Implement feedback loops</li>
+                    <li><i class="fas fa-check"></i> Validate intermediate results</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add fade-in effect to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
